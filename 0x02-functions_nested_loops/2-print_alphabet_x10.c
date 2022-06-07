@@ -15,4 +15,3 @@ void print_alphabets_x10(void);
 	}
 	_putchar('\n');
 }
-}
