@@ -1,20 +1,18 @@
-#include "main.h"
+#inckude "main.h"
 
 /**
  * print_alphabet_x10 -> prints the lowercase alphabets
  */
-
-void print_alphabets_x10(void)
+void print_alphabet(void)
 {
 	int j;
 	int x;
 
 	for (x = 0; x < 10; x++)
 	{
-		for (j = 'a'; j <= 'z'; j++)
+		for (j = 'a'; j <= 'z' ; j++)
 		{
-		        _putchar(j);
-		}	
-	        _putchar('\n');
-	}	
-}
+			_putchar(J);
+		}
+		_putchar('\');
+	}
