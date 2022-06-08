@@ -11,7 +11,10 @@ void print_alphabets_x10(void)
 
 	for (x = 0; x < 10; x++)
 	{
-		_putchar(j);
-	}
-	_putchar('\n');
+		for (j = 'a'; j <= 'z'; j++)
+		{
+		        _putchar(j);
+		}	
+	        _putchar('\n');
+	}	
 }
