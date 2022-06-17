@@ -4,7 +4,7 @@
 /**
  * _strcmp -> for comparing purpose
  * @s1: param1
- * @s1: param2
+ * @s2: param2
  * Return: integer
  */
 int _strcmp(char *s1, char *s2)
