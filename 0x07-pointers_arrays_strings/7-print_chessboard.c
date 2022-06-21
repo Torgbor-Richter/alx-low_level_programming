@@ -1,22 +1,33 @@
 #include "main.h"
 
 /**
- * print_chessboard - Print the chessboard
- * @a: array of pieces
+ *  _strpbrk - search a string for any of a set of bytes
+ *  @s: source string
+ *  @accept: accepted characters
  *
- * Return: Nothing.
+ *  Return: the string since the first found accepted character
  */
-void print_chessboard(char (*a)[8])
+char *_strpbrk(char *s, char *accept)
 {
-	int b, c;
+	int a = 0, b;
 
-	for (b = 0; b < 8; b++)
+	while (s[a])
 	{
-		for (c = 0; c < 8; c++)
+		b = 0;
+
+		while (accept[b])
 		{
-			_putchar(a[b][c]);
+			if (s[a] == accept[b])
+			{
+				s += a;
+				return (s);
+			}
+
+			b++;
 		}
 
-		_putchar('\n');
+		a++;
 	}
+
+	return ('\0');
 }
