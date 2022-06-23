@@ -89,18 +89,18 @@ int bandersnatch(char *s1, char *s2)
 }
 
 /**
- * *move - moves the current char past the *
+ * move - moves the current char past the
  * @s2: string to iterate over
  *
- * Return: the address of the character after the *
+ * Return: the address of the character after the
  */
 char *move(char *s2)
 {
 	/**
-	 * if the current char is a *
+	 * if the current char is a
 	 * increment s2 by 1
 	 * else return the address of
-	 * the first char past all *
+	 * the first char past all
 	 */
 	if (*s2 == '*')
 		return (move(s2 + 1));
