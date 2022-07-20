@@ -11,7 +11,7 @@ void free_listp2(listint_t **head)
 {
 	listint_t *temp;
 	listint_t *curr;
-	
+
 	if (head != NULL)
 	{
 		curr = *head;
